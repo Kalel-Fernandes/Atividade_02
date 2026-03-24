@@ -1,4 +1,5 @@
 <?php
+date_default_timezone_set('America/Sao_Paulo');
 
 // Criando a classe Mensagem
 class Mensagem implements JsonSerializable {
@@ -12,7 +13,7 @@ class Mensagem implements JsonSerializable {
         // This chama atributos da própria classe
         $this->texto = $texto;
         $this->autor = $autor;
-        $this->data = $data;
+        $this->data = $data ?? date("d/m/y H:i:s");
     }
 
     // Função de envio da Mensagem

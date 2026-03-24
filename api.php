@@ -6,7 +6,6 @@ require_once "mensagem.php";
 // Transformando para GET
 $texto = $_GET['texto'] ?? null;
 $autor = $_GET['autor'] ?? null;
-$data  = $_GET['data'] ?? date("Y-m-d");
 
 // Verificação para exibição da mensagem
 if ($texto && $autor) {
