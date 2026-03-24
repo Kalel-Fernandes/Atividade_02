@@ -1,4 +1,5 @@
 <?php
+// Formatação da data
 date_default_timezone_set('America/Sao_Paulo');
 
 // Criando a classe Mensagem
